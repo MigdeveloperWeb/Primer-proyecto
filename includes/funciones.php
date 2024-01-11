@@ -12,6 +12,8 @@ function obtenerServicios(){
         var_dump(mysqli_fetch_assoc($consulta));
         echo "</pre>";
 
+        $resultado = mysqli_close($db);
+
     }catch(\Throwable $th) {
 
     }
